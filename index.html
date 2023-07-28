@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos importantes de Git</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Comandos importantes de Git</h1>
+    <p>A continuación, se presentan algunos de los comandos más utilizados en Git:</p>
+
+    <h2>Configuración</h2>
+    <p>Configurar el nombre del autor:</p>
+    <code>git config --global user.name "Sergie Code" Tu Nombre</code>
+    <p>Configurar el correo electrónico del autor:</p>
+    <code>git config --global user.email "sergiecode@gmail.com" (Tu Mail)</code>
+
+    <h2>Creación de repositorio</h2>
+    <p>Iniciar un nuevo repositorio:</p>
+    <code>git init</code>
+    <p>Clonar un repositorio existente:</p>
+    <code>git clone nombre_de_usuario@servidor:path/al/repo.git</code>
+
+    <h2>Registro de cambios</h2>
+    <p>Ver el estado de los archivos:</p>
+    <code>git status</code>
+    <p>Agregar cambios al área de preparación:</p>
+    <code>git add nombre_archivo</code>
+    <p>Confirmar los cambios:</p>
+    <code>git commit -m "Mensaje del commit"</code>
+
+    <h2>Ramas</h2>
+    <p>Listar ramas:</p>
+    <code>git branch</code>
+    <p>Crear una nueva rama:</p>
+    <code>git branch nombre_rama</code>
+    <p>Cambiar a una rama específica:</p>
+    <code>git checkout nombre_rama</code>
+    <p>Crear y cambiar a una nueva rama:</p>
+    <code>git checkout -b nombre_rama</code>
+
+    <h2>Fusión y Rebase</h2>
+    <p>Fusionar una rama en la rama actual:</p>
+    <code>git merge nombre_rama</code>
+    <p>Rebase de una rama sobre la rama actual:</p>
+    <code>git rebase nombre_rama</code>
+
+    <h2>Colaboración</h2>
+    <p>Ver los repositorios remotos configurados:</p>
+    <code>git remote -v</code>
+    <p>Enviar cambios al repositorio remoto:</p>
+    <code>git push nombre_remoto nombre_rama</code>
+    <p>Obtener cambios del repositorio remoto:</p>
+    <code>git pull nombre_remoto nombre_rama</code>
+
+    <h2>Historial</h2>
+    <p>Ver el historial de commits:</p>
+    <code>git log</code>
+    <p>Ver cambios específicos entre commits:</p>
+    <code>git diff commit1 commit2</code>
+
+</body>
+
+</html>
